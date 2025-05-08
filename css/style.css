@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+}
+li a button{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2% 10px;
+    background-color: blue;
+}
+li{
+    background-color: rgb(255, 204, 0);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    cursor: pointer; 
+    margin-right: auto;
+    color: white
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+.navbar li a{
+    transition: all 0.3 ease 0s;
+}
+.navbar li a:hover{
+    color: brown;
+}
+button{
+    padding: 9px 25px;
+    background: radial-gradient(white, lightgray );
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+button:hover{
+    background: radial-gradient(white, gray)/* for now just tesing*/
+}       
+
+

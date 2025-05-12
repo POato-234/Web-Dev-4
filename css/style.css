@@ -54,6 +54,11 @@ button{
 button:hover{
     background: radial-gradient(rgb(96, 94, 94), gray)/* for now just tesing*/
 }
+.first-div-container{
+    background-color: black;
+    width: 100%;
+    width: 50px;
+}
 
 
 

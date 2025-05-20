@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gallery</title>
+</head>
+<style>
+        body{           
+        background-color: black;
+        line-height: 2rem;
+                font-size: 1.2rem;
+        }
+        .image-grid{
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr 1fr));
+            grid-template-rows: auto;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-rows: repeat(10, 600px); */
+            max-width: 50%;
+            margin-left: 25%;
+            row-gap: 10px;
+            column-gap: 30px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 70px;
+        }
+        .image-grid img{
+            border-radius: 10px 10px 10px 10px;
+            object-fit: cover;
+            height: 600px;
+            width: 100%;
+            border: 2px solid ;
+        }
+        .img-ani{
+        width: 300px;      
+        height: 200px;
+        border-radius: 15px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        cursor: pointer;
+        display: block;
+        object-fit: cover;
+        margin: 20px auto;
+        }
+        .img-ani:hover {
+        
+        }
+</style>
+<body>
+    <header>
+        <img class="logo" src="img/default-monochrome-white.svg" width="12%" alt="" >
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <a class="button" href="contact-page.html"><button type="button">Contact</button></a>
+    </header>
+    br
+    <h1>NAAWI-OODENA PHOTO GALLERY</h1>
+    <br>
+        <div class="image-grid">
+            <div class="item1">
+                <img class="img-ani" src="img2/1198396d-a3a3-43f4-b7c5-da3bd2902192.jpg" alt="picture of a white 4 story modern apartments">
+            </div>
+            <div class="item2">
+                <img src="img2/4685a026-45a4-4339-8340-e387c8de17dd.jpg" alt="lanscape picture of naawi-oodena landview from a drone">
+            </div>
+            <div>
+                <img src="img2/51775e89-ea8b-4522-8648-a31bb7e33302.jpg" alt=" children playing in the play ground">
+            </div>
+            <div>
+                <img src="img2/7e697b42-7919-4e34-b071-bfe017df0618.jpg" alt="community gathering with food stands">
+            </div>
+            <div>
+                <img src="img2/a9f8e33a-b0cc-43f4-bba2-02188796a4b0.jpg" alt=" 2 people infront of a big modernt biulding">
+            </div>
+            <div>
+                <img src="img2/b141300a-5bd2-4869-bc95-e1dfc09258bf.jpg" alt=" the inside of a modern house with big windows">
+            </div>
+            <div>
+                <img src="img2/c658594d-6b66-4037-8b86-2aefd6e61f39.jpg" alt=" a library with a lot of books and a big window">
+            </div>
+            <div>
+                <img src="img2/02023ae5-6196-4eb8-ab7c-54fad0d02f29.jpg" alt=" an apartments compound with some trees at the side and a walkway">
+            </div>
+            <div>
+                <img src="img2/0933854d-e5d2-4033-97d1-b451b316cd77.jpg" alt=" close to sunset view of a neighborhood with a lot of small trees">
+            </div>
+            <div>
+                <img src="img2/28ed2265-8aaa-4b02-b484-e383650f8453.jpg" alt=" picture many different sports courts  with a few people playing on them">
+            </div>
+            <div>
+                <img src="img2/a722904a-033f-4d28-b4ab-879e665ab550.jpg" alt=" a picture of outside a biulding with a small garden">
+            </div>
+            <div>
+                <img src="img2/6d9e1682-130c-4bd4-bd4a-2fea6572abf8.jpg" alt=" an alyway that has store and thier is people walking by it">
+            </div>
+        </div>
+</body>
+</html>

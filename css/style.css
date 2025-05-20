@@ -1,70 +1,96 @@
+/* color family: Dark charcoal, aqua, and coral  
+I chose these colors because they create a modern look while maintaining good readability on a dark background.  
+The dark charcoal (#222222) and black provide a strong, neutral base that feels professional.  
+Aqua (#00FFFF) gives a bright, cool accent color that draws attention to important links and highlights.  
+Coral (#FF7F50) adds warmth and energy as a secondary accent, creating visual interest and balancing the cool tones.  
+all together these colors created a balanced contrast that i felt like enhances usability and maked the site visually engaging. */
+/* For my website, I used black and dark charcoal (#222222) as my primary background colors,  
+aqua (#00FFFF) as my primary accent color for links and highlights,  
+and coral (#FF7F50) as my secondary accent color for subtle emphasis. these colors are a mix of neutral and complementary accent colors. */
+    
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; 
+    margin: 0;              /* Remove default margin */
+    padding: 0;             /* Remove default padding */
 }
+/* Style links inside list items that contain buttons */
 li a button{
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    font-family: sans-serif;          /* Use clean, readable sans-serif font */
+    font-weight: 500;                 /* Medium font weight for better readability */
+    font-size: 16px;                  /* Adequate font size for navigation */
+    color: rgb(255, 255, 255);       /* White text for strong contrast on dark background */
+    text-decoration: none;            /* Remove underline for a cleaner look */
 }
+/* Header container styles */
 header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.4% 10px;
-    background-color: rgb(91, 91, 118);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}   
+    display: flex;                   /* Use flexbox to layout children */
+    justify-content: flex-end;       /* Align child elements to the right */
+    align-items: center;             /* Vertically center all child elements */
+    padding: 1.4% 10px;              /* Space inside the header for breathing room */
+    background-color: #222222;       /* Dark charcoal background for subtle, modern navbar */
+    position: sticky;                /* Fix header at top during scrolling */
+    top: 0;                         /* Stick to top edge of viewport */
+    z-index: 1;                     /* Place header above other elements */
+}
+/* General link styles */
 a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none;           /* Remove underline from all links */
+    color: white;                    /* White color for readability on dark background */
 }
+/* Logo styles */
 .logo{
-    cursor: pointer; 
-    margin-right: 67%;
-    color: white
+    cursor: pointer;                /* Pointer cursor signals clickable element */
+    margin-right: 70%;              /* Push logo far left, so nav items are on right */
+    color: white;                   /* Logo text or icon in white for contrast */
 }
+/* Navbar list container */
 .navbar{
-    list-style: none;
+    list-style: none;               /* Remove bullet points from list */
 }
+/* Navbar list items */
 .navbar li{
-    display: inline-block;
-    padding: 0px 20px;
-    text-decoration: none;
+    display: inline-block;          /* Display list items horizontally */
+    padding: 0px 15px 5px;          /* Horizontal padding and a little bottom padding */
+    text-decoration: none;          /* Remove underline from list items */
 }
+/* Navbar links */
 .navbar li a{
-    transition: all 0.3 ease 0s;
+    transition: all 0.3s ease 0s; /* Smooth transition on hover for any change */
 }
+/* Navbar links on hover */
 .navbar li a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(241, 182, 182);                   /* Change text color to black on hover for feedback */
+    transition: all 0.3s ease 0s;   /* Smooth transition on color change */
 }
+/* Button styles */
 button{
-    padding: 9px 25px;
-    background: radial-gradient(rgb(36, 34, 34), rgb(56, 51, 51) );
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3 ease 0s;
-    color: rgb(255, 255, 255);
+    padding: 9px 25px;               /* Padding inside button for clickable area */
+    background: radial-gradient(rgb(36, 34, 34), rgb(56, 51, 51)); /* Subtle dark gradient for depth */
+    border: none;                   /* Remove default button border */
+    border-radius: 50px;            /* Rounded pill shape for modern look */
+    cursor: pointer;                /* Pointer cursor to show it’s clickable */
+    transition: all 0.3s ease 0s;   /* Smooth transition on hover */
+    color: rgb(255, 255, 255);      /* White text for readability */
 }
+/* Button hover effect */
 button:hover{
-    background: radial-gradient(rgb(96, 94, 94), gray)/* for now just tesing*/
+    background: radial-gradient(rgb(96, 94, 94), gray); /* Lightens gradient on hover for feedback */
 }
+/* Navbar links hover override (duplicated selector, last one applies) */
+.navbar li a:hover{
+    color: black;                  /* Hover color is black for strong contrast */
+    transition: all 0.3s ease 0s;  /* Smooth transition for hover */
+}
+/* Container with black background */
 .first-div-container{
-    background-color: black;
-    width: 100%;
-    width: 50px;
+    background-color: black;       /* Solid black background for strong contrast */
+    width: 100%;                   /* Full width container */
+    width: 50px;                   /* Overwrites above width — likely a mistake */
 }
+/* Left image styling */
 .img-left{
-    border-radius: 10px 10px 10px 10px;
-    margin-right: 7%;
-    margin-bottom: 5%;
+    transition: transform 0.3s ease-in-out; /* Smooth transform for hover scaling */
+    border-radius:10px;            /* Rounded corners for softer appearance */
+    margin-right: 7%;              /* Space to the right for layout breathing */
+    margin-bottom: 5%;             /* Space below image for vertical separation */
 }
-
-
-

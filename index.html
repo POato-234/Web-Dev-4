@@ -1,101 +1,316 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web project 4 </title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .round-edges-img{
-            border-radius: 0px 0px 10px 10px;
-            z-index: -1 ;
-            filter: brightness(0.5);
-            position: relative; 
-        }
-        .buttom-left{
-            position: absolute;
-            top: 65%;
-            left: 3%;
-            color: white;
-            font-size: 150px;
-        }
-        .first-div-container{
-            background-color: black;
-            width: 100%;
-            height: 400px;
-        }
-        p{
-            color: white;
-        }
-        .side-text-containter{
-            display: flex;
-            justify-content: space-between;
-        }
-        .text-align{
-            color: white;
-            margin-left: 10%;
-            margin-top: 2%;
-        }
-        .word-bottom{
-            margin-left: 10%;
-            margin-top: 5%;
-            margin-right: 20%;
-        }
-        .box{
-            width: 100%;
-            height: 200px;
-        }
-        .first-div-container{
-            width: 100%;
-            height: 80%;
-        }
-        .link-color{
-            color: aqua;
-        }
-    </style>
-</head>
-<body>
-<header>
-    <img class="logo" src="img/default-monochrome-white.svg" width="12%" alt="" >
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">FILLER</a></li>
-        </ul>
-    </nav>
-    <a class="button" href="contact-page.html"><button type="button">Contact</button></a>
-</header>
-<div>
-    <img class="round-edges-img" src="img/514b6b4c-6bd4-4f2f-92ae-94d3d7307ded.jpg" width="100%" height="600px" alt="an AI image of what naawi-Oodena would look like" > 
-    <p class="buttom-left">Naawi-Oodena</p>
-</div>
-    <div class="first-div-container">
-        <br>
-        <h1 class="text-align"> HELLOW TO NAAWI_OODENA</h1>
-            <div style="display: flex;">
-                <p class="word-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    <br>
-                    <a class="link-color" href="">Read More..</a></p>
-                    
-                <img class="img-left" src="img/17cc676e-4b99-4083-aafd-8db95781dced.png" width="500px" height="400px" alt="">
-            </div>
-            </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!DOCTYPE html> <!-- Document type declaration -->
+    <html lang="en"> <!-- HTML document with English language -->
+    <head>
+        <meta charset="UTF-8"> <!-- Character encoding -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport -->
+        <title>web project 4 </title> <!-- Page title -->
+        <link rel="stylesheet" href="css/style.css"> <!-- External CSS -->
+        <style>
+            body{ 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+                font-size: 1.2rem; /* Font size */
+                line-height: 2rem; /* Line height */ 
+            }
+            .round-edges-img{
+                -webkit-border-radius: 0px 0px 10px 10px; /* Safari */
+                -moz-border-radius: 0px 0px 10px 10px; /* Firefox */
+                border-radius: 0px 0px 10px 10px;  /* Rounded bottom corners */
+                -webkit-filter: brightness(0.5); /* Safari */
+                -moz-filter: brightness(0.5); /* Firefox */
+                filter: brightness(0.5); /* Darken image */
+                z-index: -1 ; /* make the image behind the text */
+            }
+            .buttom-left{
+                position: absolute; /* Position the text */
+                top: 55%; /* Position from the top */
+                left: 3%; /* Position from the left */
+                color: white; /* Text color */
+                font-size: 150px; /* Font size */
+            }
+            .first-div-container{
+                border-radius: 10px 10px 0px 0px; /* Rounded corners */
+                background-color: black;  /* Background color */
+                width: 100%; /* Full width */
+                height: 400px; /* Height */
+            }
+            .first-div-container2{
+                background-color: black; /* Background color */
+                width: 100%; /* Full width */ 
+                height: 100%; /* Height */ 
+            }   
+            p{
+                color: white; /* Text color */
+            }
+            .side-text-containter{
+                display: flex; /* Flexbox layout */
+                justify-content: space-between; /* Space between items */
+            }
+            .text-align{
+                color: white; /* Text color */
+                margin-left: 10%; /* moves it to the right*/
+                margin-top: 2%;    /* moves it bottom */
+            }
+            .word-bottom{ 
+                margin-left: 10%; /* moves it to the right */
+                margin-top: 5%; /* moves it to the bottom */
+                margin-right: 20%; /* moves it to the left */
+            }
+            .box{
+                width: 100%; /* Full width */
+                height: 200px; /* Height */ 
+            }
+            .first-div-container{
+                width: 100%; /* Full width */
+                height: 80%;    /* Height */
+            }
+            .link-color{ 
+                color: aqua; /* Text color */ 
+            }
+            .More-text{
+                margin-top: 22%; /* moves it to the bottom */
+                left: 10%; /* moves it to the left */
+            }
+            /* .testing-grid-container div{
+                background-color: black; */
+            
+            /* .testing-grid-container{
+                border-radius: 10px 10px 0px 0px;
+                display: grid;
+                grid-template-rows: repeat(11, 50px);
+                grid-template-columns: 1.29fr 1fr;
+                background-color: rgb(0, 0, 0);
+            }
+                .heading{
+                    grid-area: 2 / 1 / 3 / 2;
+                }
+                .textign{
+                    grid-area: 4 / 1 / 10 / 2;
+                }
+                .imging{
+                    border-radius: 10px 10px 10px 10px;
+                    grid-area: 3 / 2 / 11 / 3;
+                    display: flex;
+                    margin-left: 30%;
+                }
+                #img2-left{
+                    border-radius: 10px 10px 10px 10px;
+                }
+                .div-figcap{
+                    grid-area: 8 / 1 / 9 / 2;
+                    margin-left: 10%;
+                    margin-top: 3%;
+                } */
+                span{
+                    color: aqua; /* Text color */ 
+                }
+                .first-vid{
+                    display: block; /* Block display */
+                    width: 100%; /* Full width */
+                    height: 550px; /* Height */ 
+                    object-fit: cover; /* Cover the container */ 
+                    pointer-events: none;   /* Disable pointer events */
+                    /* z-index: -1; */
+                    /* position: fixed;
+                    inset: 0;
+                    margin-top: 5%; */
+                }
+                .div-container{
+                    background-color: black; /* Background color */ 
+                    width: 100%; /* Full width */ 
+                    height: 650px;  /* Height */ 
+                }
+                .word-bottom-right{
+                    margin-top: 8%; /* moves it to the bottom */ 
+                    margin-right: 15%; /* moves it to the left */ 
+                    margin-left: 15%; /* moves it to the right */ 
+                }
+                .text-align-right{
+                    margin-top: 3%; /* moves it to the bottom */ 
+                    margin-left: 60%; /* moves it to the right */ 
+                    color: white; /* Text color */ 
+                }
+                .img-right{
+                    margin-left: 5%; /* moves it to the right */ 
+                    transition: transform 0.3s ease-in-out; /* Smooth transition */
+                        -webkit-border-radius: 10px; /* Safari */
+                        -moz-border-radius: 10px; /* Firefox */
+                        border-radius: 10px; 
+                        -webkit-transition: -webkit-transform 0.3s ease-in-out; /* Safari */
+                        -moz-transition: -moz-transform 0.3s ease-in-out; /* Firefox */
+                        -ms-transition: -ms-transform 0.3s ease-in-out; /* IE */
+                        -o-transition: -o-transform 0.3s ease-in-out; /* Opera */
+                        transition: transform 0.3s ease-in-out; /* Smooth transition */
+                }
+                .img-left:hover, 
+                .img-right:hover{
+                    transform: scale(1.05);  /* Scale up on hover */
+                    -webkit-transform: scale(1.05); /* Safari */
+                    -moz-transform: scale(1.05); /* Firefox */
+                    -ms-transform: scale(1.05); /* IE */
+                    -o-transform: scale(1.05); /* Opera */
+                    transform: scale(1.05); /* Scale up on hover */
+                }
+                .flex-container{
+                    display: flex; /* Flexbox layout */
+                }
+                @media (max-width: 768px) { 
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-    <br>
-    <br>
-</body>
-</html>
+    .text-align,
+    .word-bottom,
+    .text-align-right,
+    .word-bottom-right {
+        margin: 2% 5%;
+        text-align: center;
+    }
+
+    .img-left,
+    .img-right {
+        margin: 2% 0;
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    .buttom-left {
+        font-size: 20px; /* Make large text responsive */
+        top: 40%;
+        left: 5%;
+    }
+
+    .first-vid {
+        height: auto;
+    }
+    }
+    .footer p{
+        color: white;
+    }
+        </style>
+    </head>
+    <body>
+    <header>
+        <img class="logo" src="img/default-monochrome-white.svg" width="12%" alt="" > <!-- Logo -->
+        <nav> <!-- Navigation bar -->
+            <ul class="navbar"> <!-- Navigation list -->
+                <li><a href="index.html">Home</a></li> <!-- Home link -->
+                <li><a href="Gallery.html">Gallery</a></li> <!-- Gallery link -->
+            </ul>
+        </nav>
+        <a class="button" href="contact-page.html"><button type="button">Contact</button></a> <!-- Contact button -->
+    </header>
+    <main>
+        <section>
+            <img class="round-edges-img" src="img/514b6b4c-6bd4-4f2f-92ae-94d3d7307ded.jpg" width="100%" height="600px" alt="an AI image of a white modern biulding" > <!-- Hero image -->
+            <h1 class="buttom-left">Naawi-Oodena</h1> <!-- Main heading on image -->
+        </section>
+    </main>
+        
+    </div>
+    <section>
+        <div class="first-div-container">
+            <br>
+            <h1 class="text-align"> RESIDENTIAL</h1> <!-- Residential section heading -->
+            <div class="flex-container">
+                <p class="word-bottom">Naawi-Oodena's residential areas are planned to foster community with diverse housing.
+                        These areas prioritize walkability, green spaces, and community integration.
+                        the Medium Density Residential areas include apartments, condominiums, and townhouses for urban living.
+                        These neighborhoods offer access to amenities and prioritize accessibility and quality architecture."
+                        they have Accessibility and age-friendly design and the Architecture is high-quality.
+                        <br> 
+                        And the Lower Density Residential areas offer traditional housing like single-family homes, they focus on biulding a relaxed
+                        environment. These neighborhoods integrate with the community and include landscaping and green spaces.
+                        <br>
+                    <a class="link-color" href="">Read More..</a></p> <!-- Read more link -->
+                    <img class="img-left" src="img/17cc676e-4b99-4083-aafd-8db95781dced.png" width="500px" height="400px" alt="an image of houses of what naawi-oodena would look like"> <!-- Residential image -->
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="div-container">
+            <br>
+            <h1 class="text-align-right">COMMERCIAL MIXED-USE</h1> <!-- Commercial section heading -->
+            <div class="flex-container">
+                <img class="img-right" src="img/97c2c18b-947d-46b8-ad54-adcefb55488d.jpg" width="500px" height="400px" alt=" an image of the a mix of "> <!-- Commercial image -->
+                <p class="word-bottom-right">Community spaces and amenities are designed to foster belonging and are inclusive
+                    and adaptable, providing areas for various activities.A mix of retail and service commercial uses, that creates a lively and convenient environment for shopping, dining, and everyday needs, and a
+                    Multi-modal accessibility is prioritized, ensuring that the district is easily reached by pedestrians, cyclists, transit users, and drivers alike, promoting connectivity and reducing reliance on single-occupancy
+                    vehicles.
+                <br>
+                <a href="https://pembinatrails.edsby.com/core/nodedl/323083949?field=file&xds=fileThumbnail&size=orig&ui=AlbumFileView-header-commands-fullsize]"><span>More..</span></a> <!-- More link -->
+            </p>
+        </div>
+    </div>
+    </section>  
+    <section>
+        <video class="first-vid" src="videos/neghborhood.view.mp4" autoplay loop muted playsinline ></video> <!-- Neighborhood video -->
+    </section>
+    <section>
+        <div class="div-container">
+            <br>
+            <h1 class="text-align-right">COMMUNITY SPACES</h1> <!-- Community spaces heading -->
+            <div class="flex-container">
+                <img class="img-right" src="img/83fd32cd-bf0e-435a-b722-46928e762251.jpg" width="500px" height="400px" alt=""> <!-- Community spaces image -->
+                <p class="word-bottom-right">Community is at the heart of Naawi-Oodena, with dedicated spaces designed to bring people together and celebrate First Nations culture. Community Spaces will offer a range of active and passive
+                    recreation opportunities, serving as gathering places for community events and daily interactions. These spaces will reflect Indigenous design principles and incorporate elements of the Treaty One Nation’s heritage.
+                <br>
+                <a href="https://pembinatrails.edsby.com/core/nodedl/323083949?field=file&xds=fileThumbnail&size=orig&ui=AlbumFileView-header-commands-fullsize"><span>More..</span></a> <!-- More link -->
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="first-div-container2">
+            <br>
+        <h1 class="text-align">SPORTS & RECREATION</h1> <!-- Sports & Recreation heading -->                
+        <div class="flex-container">
+            <p class="word-bottom">
+                The <span style="color: coral;">Sports + Recreation</span> areas will provide venues for community and regional-scale cultural
+                and recreational facilities. This will be a destination for active recreation, supporting
+                the health and well-being of residents and hosting large community gatherings.              
+                <br>
+                <a class="link-color" href="">Read More..</a></p> <!-- Read more link -->
+                <img class="img-left" src="img/dec8d010-2ae6-4441-bb30-e12566ce4bee.jpg" width="500px" height="400px" alt="an image of houses of what naawi-oodena would look like"> <!-- Sports & Recreation image -->                
+            </div>
+        </div>
+    </section>
+    <section>
+        <iframe style="display: flex;" width="100%" height="500" src="https://www.youtube.com/embed/ODH13-YOeyE?si=w4TfSe65i4yzDAFm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- YouTube video -->
+    </section>
+    <section>
+        <div class="first-div-container2">
+            <br>
+            <h1 class="text-align">CULTURAL CAMPUS + EDUCATION</h1> <!-- Cultural Campus heading -->                
+            <div class="flex-container">
+            <p class="word-bottom">finally, the Cultural Campus + Education zone will establish a governance and administration center for the Treaty One Nation government.
+                This area will also foster a vibrant mixed-use campus for innovation, learning, and community building, with a strong foundation in First Nations identity. 
+                They will offers space for learning, innovation, and cultural exchange. This campus promotes education, knowledge sharing, and the celebration of Indigenous arts, culture, and traditions
+                <a class="link-color" href="https://pembinatrails.edsby.com/core/nodedl/323083949?field=file&xds=fileThumbnail&size=orig&ui=AlbumFileView-header-commands-fullsize">Read More..</a></p> <!-- Read more link -->
+            <img class="img-left" src="img/64565093-6c74-441d-8362-9822ff2847ff.jpg" width="500px" height="400px" alt="an image of houses of what naawi-oodena would look like"> <!-- Cultural Campus image -->                
+        </div>
+        </div>   
+    </section>       
+    <section>
+        <div class="div-container">
+        <br>
+        <h1 class="text-align-right">MIXED-USE VILLAGE</h1> <!-- Mixed-use village heading -->
+        <div class="flex-container">
+            <img class="img-right" src="img/c6047db2-8885-4cad-acb6-4b562a769dc3.jpg" width="500px" height="400px" alt=""> <!-- Mixed-use village image -->
+            <p class="word-bottom-right">he mixed-use village is a key design idea in Naawi-Oodena, meant to create a lively and convenient place for people. 
+                It's about bringing together different parts of life, homes, shops, workplaces, all in one area. Imagine being able to walk to get groceries,
+                go out for dinner, or visit a local park, all within your neighborhood. This kind of design encourages a sense of community, makes everyday life easier, and creates a more vibrant and interesting place to be.
+            <br>
+            <a href="https://pembinatrails.edsby.com/core/nodedl/323083949?field=file&xds=fileThumbnail&size=orig&ui=AlbumFileView-header-commands-fullsize"><span>More..</span></a> <!-- More link -->
+            </p>
+        </div>
+    </div>
+    </section>
+    <footer> <!-- Footer section -->
+            <p style="color: black;">&copy; 2025 Naawi-Oodena. Time to shine.</p>
+            <p><a style="color: rgb(8, 3, 97);" href="https://magichour.ai/create/ai-image-generator">Photos generator</a></p>
+
+    </footer>
+    </body>
+    </html>
